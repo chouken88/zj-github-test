@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap 实例</title>
+  <meta charset="gb2312">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <!--link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"-->  
+  <!--script src="lib/bootstrap/js/bootstrap.min.js"></script-->
+
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<script language="javaScript">
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>Appended item</li>");
+  });
+});
+
+</script>
+
+<style>
+
+body{
+padding-top:110px;
+padding-bottom:80px;
+}
+
+@media (max-width: 450px) {
+   .container {
+      width: 250px;
+}
+}
+
+.tab-content div{
+background-color:rgb(120,10,10);
+height:300px;
+color:white;
+}
+
+#btn1{
+background-color: #337ab7;
+color: #fff;
+border-color: #2e6da4;
+}
+#btn1:hover {
+color: #fff;
+background-color: #286090;
+border-color: #204d74;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+             <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+                   <a class="navbar-brand" href="#">菜鸟例子试做</a>
+              </div>
+
+              <div  class="collapse navbar-collapse navbar-left" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                          <li class="active"><a href="#">iOS</a></li>
+                          <li><a href="#">SVN</a></li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                 Java  <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">jmeter</a></li>
+                                  <li><a href="#">EJB</a></li>
+                                  <li><a href="#">Jasper Report</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">分离的链接</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">另一个分离的链接</a></li>
+                             </ul>
+                          </li>
+                      </ul>
+              </div>
+
+           <form class="navbar-form navbar-right" style="" role="search">
+                 <div class="input-group">
+                     <input type="text" class="form-control" size=30 placeholder="Search1：和菜单同行显示">
+                     <button id="btn1" type="submit" class="btn btn-primary input-group-addon" style="">检索1<span class="glyphicon glyphicon-search"></span></button>
+                 </div>
+             </form>
+
+
+       </div>
+   
+<div style="margin-right:15px;">      
+           <form class="navbar-form navbar-right" style="margin-left: 0;" role="search2">
+                 <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search2：换行显示">
+                     <button id="btn1" type="submit" class="btn btn-primary input-group-addon" style="">检索2<span class="glyphicon glyphicon-search"></span></button>
+                 </div>
+             </form>
+</div>
+
+
+
+</nav>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">菜鸟ABC</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<br>
+<ol class="breadcrumb">
+	<li><a href="#">File</a></li>
+	<li><a href="#">folder1</a></li>
+                <li><a href="#">folder2</a></li>
+	<li class="active">fileName</li>
+</ol>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#SVN">SVN</a></li>
+    <li><a data-toggle="tab" href="#iOS">iOS</a></li>
+    <li><a data-toggle="tab" href="#VB">VB.Net</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Java <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Swing</a></li>
+
+        <li><a href="#">EJB</a></li>
+        <li class="divider"></li>
+        <li><a href="#">分离的链接</a></li>
+      </ul>
+    </li>
+    <li><a href="#">PHP</a></li>
+        <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">
+          jMeter <span class="caret"></span>
+      </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">aaaa</a></li>
+                <li><a href="#">bbbb</a></li>
+
+              </ul>
+        </li>
+  </ul>
+ <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>首页</h3>
+      <p>菜鸟教程 —— 学的不仅是技术，更是梦想！！！</p>
+    </div>
+    <div id="SVN" class="tab-pane fade">
+      <h3>SVN</h3>
+      <p>这是SVN的内容。</p>
+    </div>
+    <div id="iOS" class="tab-pane fade">
+      <h3>iOS</h3>
+      <p>这是iOS的内容。</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>菜单 3</h3>
+      <p>这是菜单 3 显示的内容。这是菜单 3 显示的内容。这是菜单 3 显示的内容。</p>
+    </div>
+  </div>
+
+
+<br><br>
+
+  <div class="row">
+    <div class="col-sm-2">
+         <div>
+
+<label class="input-group-addon">姓名</label>
+         </div>
+    </div>
+    <div class="col-sm-3">
+         <div>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+    <div class="col-sm-2">
+         <div>
+            <span>家庭住址：</span>
+         </div>
+    </div>
+    <div class="col-sm-3">
+         <div>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+         <div class="input-group">
+            <span class="input-group-addon">出生年月日：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+    <div class="col-sm-6">
+         <div class="input-group">
+            <span class="input-group-addon">配偶所在单位：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+         <div class="input-group">
+            <span class="input-group-addon">出生年月日：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+    <div class="col-sm-6">
+         <div class="input-group">
+            <span class="input-group-addon">配偶所在单位：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+         </div>
+    </div>
+  </div>
+
+<!--
+<div style="padding: 100px 100px 10px;">
+    <form role="form">
+        <div class="input-group">
+            <span class="input-group-addon">您的姓名：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle" style="margin-right:77px;">
+            <span class="input-group-addon" style="margin-left:12px;">您的姓名：</span>
+            <input type="text" class="form-control" placeholder="twitterhandle">
+        </div>
+
+
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+    </form>
+</div>
+-->
+<div class="dropdown">
+   <button type="button"  id="dropdownMenu1" class="btn btn-primary dropdown-toggle" 
+data-toggle="dropdown" style="text-shadow: black 5px 3px 3px;">Menu <span class="caret"></span>
+</button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-envelope"> </span>Java</a></li>
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-search"> </span>数据挖掘</a></li>
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-search"> </span>数据通信/网络</a></li>      
+      <li class="divider" role="presentation" ></li>
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"> </span>分离的链接1</a></li>
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"> </span>分离的链接2</a></li>
+      <li role="presentation"><a  role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"> </span>分离的链接3</a></li>
+</ul>
+</div>
+
+
+
+  <div class="row">
+    <div class="col-xs-2  col-lg-2">
+      <h3>第一列1sssssssssssss</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+    <div class="col-xs-3 col-lg-3">
+      <h3>第二列1</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>第一列2</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+    <div class="col-lg-6">
+      <h3>第二列2</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>第一列</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>第二列</h3>
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>第三列</h3>        
+      <p>学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+
+<h2>表格</h2>
+      <p>创建响应式表格 (将在小于768px的小型设备下水平滚动)。另外：添加交替单元格的背景色：</p>      
+      <div class="table-responsive">          
+       <table class="table table-striped table-bordered">
+         <thead>
+           <tr>
+             <th>#</th>
+             <th>Name</th>
+             <th>Street</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>1</td>
+             <td>Anna Awesome</td>
+             <td>Broome Street</td>
+           </tr>
+           <tr>
+             <td>2</td>
+             <td>Debbie Dallas</td>
+             <td>Houston Street</td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>John Doe</td>
+             <td>Madison Street</td>
+           </tr>
+         </tbody>
+       </table>
+      </div>
+
+<h2>图像</h2>
+      <p>创建响应式图片(将扩展到父元素)。 另外：图片以椭圆型展示：</p>            
+      <img src="img/cinqueterre.jpg" class="img-circle rounded-circle img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+
+      
+      <h2>图标</h2>
+      <p>插入图标:</p>      
+      <p>云图标: <span class="glyphicon glyphicon-cloud"></span></p>      
+      <p>信件图标: <span class="glyphicon glyphicon-envelope"></span></p>            
+      <p>搜索图标: <span class="glyphicon glyphicon-search"></span></p>
+      <p>打印图标: <span class="glyphicon glyphicon-print"></span></p>      
+      <p>下载图标：<span class="glyphicon glyphicon-download"></span></p>      
+
+
+<form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+      
+      <input type="text" id="inputOTHER" class="form-control" placeholder="other input" required autofocus>
+
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">LOG IN</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+
+</div>
+
+
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<ol>
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ol>
+<button id="btn1">追加文本</button>
+<button id="btn2">追加列表项</button>
+<div class="container">
+<table  class="table table-striped">
+	<thead><tr><th>title1</th><th>title2</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>aaa</td>
+			<td>bbb</td>
+		</tr>
+		<tr>
+			<td>cccc</td>
+			<td>dddd</td>
+		</tr>
+		<tr>
+			<td>eeee</td>
+			<td>fffffff</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="margin-left:15px;margin-top:15px;background-color:red;height:100px;">
+<div style="margin-left:30px;margin-top:15px;padding-left:15px;padding-top:15px;padding-right:15px;padding-bottom:15px;background-color:blue;">
+<p style="margin-bottom:5px;background-color:yellow;width:100px;">aaa</p>
+<p style="background-color:lightgreen;">bbb</p>
+</div>
+</div>
+
+</body>
+</html>
